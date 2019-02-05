@@ -12,11 +12,17 @@ struct Line {
 
 std::vector<Line> ComputeLines(const std::vector<Point>& points) {
     std::vector<Line> lines;
-    for (auto point1 : points) {
-        for (auto point2 : points) {
+    lines.reserve(points.size() * points.size());
+    for (size_t i = 0; i < points.size() - 1; ++i) {
+        for (size_t j = i + 1; j < points.size(); ++j) {
             Line line;
+            auto point1 = points[i];
+            auto point2 = points[j];
+            std::cout << point1.y << " " << point1.x << std::endl;
+            std::cout << point2.y << " " << point2.x << std::endl;
             line.a = (point2.y - point1.y) / (point2.x - point1.x);
             line.b = point1.y - line.a * point1.x;
+            std::cout << line.a << " " << line.b << std::endl;
             lines.push_back(line);
         }
     }
