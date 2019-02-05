@@ -10,7 +10,19 @@ struct Line {
     double a, b;
 };
 
-std::vector<Line> ComputeLines(const std::vector<Point>& points) { return {}; }
+std::vector<Line> ComputeLines(const std::vector<Point>& points) {
+    std::vector<Line> lines;
+    for (auto point1 : points) {
+        for (auto point2 : points) {
+            Line line;
+            line.a = (point2.y - point1.y) / (point2.x - point1.x);
+            line.b = point1.y - a * point1.x;
+            lines.push_back(line);
+        }
+    }
+
+    return lines;
+}
 
 size_t CountNumberPointsOnSameLine(const std::vector<Line>& lines) { return 0; }
 
