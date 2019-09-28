@@ -1,12 +1,11 @@
 # Multi-sensor system
 
 ## Description
-- The scenario of this assignment is one (or several) mobile robot(s) equipped with two to three different sensors.
-- The robot and the sensors are exchanging information.
-- All communication happens asynchronously.
-- A robot can have varying number of sensors of varying types (e.g. Lidar, Sonar, Camera, IMU, Torque).
-- The robot itself can be of legged, wheeled, or flying type.
-- Write a small application that shows the robot(s) communicating with their sensors.
+The scenario of this assignment is one (or several) mobile robot(s) equipped with two to three different sensors.
+The robot and the sensors are exchanging information (asynchronously).
+A robot can have varying number of sensors of varying types (e.g. Lidar, Sonar, Camera, IMU, Torque).
+The robot itself can be of legged, wheeled, or flying type.
+Write a small application that shows the robot(s) communicating with their sensors.
 
 ## Remarks
 - Try not to spend more than one hour on this assignment.
