@@ -1,4 +1,5 @@
-### 3-4. [5] Design a stack S that supports S.push(x), S.pop(), and S.ﬁndmin(),
+### 3-4.
+Design a stack S that supports S.push(x), S.pop(), and S.ﬁndmin(),
  which returns the minimum element of S. All operations should run in constant
  time.
 
