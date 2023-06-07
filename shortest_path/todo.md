@@ -1,0 +1,5 @@
+- [ ] dynamic programming
+- [ ] Dijkstra
+- [ ] A*
+- [ ] RL
+- [ ] Compare
